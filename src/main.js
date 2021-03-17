@@ -12,18 +12,20 @@ import md5 from '@/commonFunction/jquery.md5.min.js'
 // 引入全局样式
 import './assets/common.css'
 import './assets/core.css'
-// 引入flexible
-import 'lib-flexible'
-import '../src/utils/flexible'
+
 // 引入swiper轮播图插件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/swiper-bundle.css'
-Vue.use(VueAwesomeSwiper);
 
+//转rem
+import 'amfe-flexible' 
+
+// 引入swiper
 Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 Vue.prototype.common = common
 Vue.prototype.md5 = md5
+Vue.use(VueAwesomeSwiper)
 // Vue.prototype.HOST = '/api'
 axios.defaults.baseURL = '/api'
 /* eslint-disable no-new */
