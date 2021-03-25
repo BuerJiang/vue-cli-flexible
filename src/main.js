@@ -19,6 +19,7 @@ import 'swiper/swiper-bundle.css'
 
 //转rem
 import 'amfe-flexible' 
+import './commonFunction/rem'
 
 // 引入swiper
 Vue.prototype.$axios = axios

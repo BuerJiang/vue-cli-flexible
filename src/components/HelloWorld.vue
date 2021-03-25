@@ -2,22 +2,19 @@
   <div class="m2">
     <swiper :options="swiperOption">
       <swiper-slide>
-        <silder1 />
+        <div class="test">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
       </swiper-slide>
-      <swiper-slide>
-        <silder2 />
-      </swiper-slide>
-      <div class="swiper-pagination swiper-pagination-home" slot="pagination"></div>
+      <swiper-slide> 2 </swiper-slide>
+      <div
+        class="swiper-pagination swiper-pagination-home"
+        slot="pagination"
+      ></div>
     </swiper>
   </div>
 </template>
 
 <script>
-import silder1 from "./slider1";
-import silder2 from "./slider2";
-
 export default {
-  components: { silder1, silder2 },
   name: "Home",
   data() {
     return {
@@ -68,6 +65,11 @@ export default {
 };
 </script>
 <style lang="scss" >
+.test {
+  width: 300px;
+  height: 300px;
+  background: olive;
+}
 .m2 {
   height: 100%;
   background: #acafc2;
@@ -75,31 +77,31 @@ export default {
     width: 100%;
     height: 100%;
     // 分页
-    .swiper-pagination-home{
-      left: 46px;
-      top: 46px;
-      transform: translate3d(0, 0, 0);
-      .swiper-pagination-bullet-active {
-        background: transparent;
-      }
-      // 分页选中后
-      .my-bullet i {
-        background-color: #41203f !important;
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
-        font-size: 14px;
-        display: block;
-        border-radius: 50%;
-      }
-      .swiper-pagination-bullet-active i {
-        -webkit-transform: scale(1.5);
-        background: url("../assets/img/shouye_nvsheng_huangseb.png") no-repeat
-          center 50%;
-        background-size: auto 100%;
-        color: #815d4b;
-      }
-    }
+    // .swiper-pagination-home{
+    //   left: 46px;
+    //   top: 46px;
+    //   transform: translate3d(0, 0, 0);
+    //   .swiper-pagination-bullet-active {
+    //     background: transparent;
+    //   }
+    //   // 分页选中后
+    //   .my-bullet i {
+    //     background-color: #41203f !important;
+    //     width: 60px;
+    //     height: 60px;
+    //     line-height: 60px;
+    //     font-size: 14px;
+    //     display: block;
+    //     border-radius: 50%;
+    //   }
+    //   .swiper-pagination-bullet-active i {
+    //     -webkit-transform: scale(1.5);
+    //     background: url("../assets/img/shouye_nvsheng_huangseb.png") no-repeat
+    //       center 50%;
+    //     background-size: auto 100%;
+    //     color: #815d4b;
+    //   }
+    // }
   }
 
   // 箭头动画

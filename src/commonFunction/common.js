@@ -20,6 +20,24 @@ export default {
     // gTag
     gtag() {
         dataLayer.push(arguments);
+    },
+
+    // 分享
+    doShare(code) {
+        switch (code) {
+            case 'fb':
+                fbq('track', 'AddToWishlist');
+                gtag('event', '完成Facebook分享');
+
+                window.open('https://www.facebook.com/sharer.php?display=popup&u=' + WEBSITE_URL, 'sharer', 'toolbar=0,status=0,resizable=1,width=626,height=436');
+                break;
+
+            case 'twi':
+                fbq('track', 'AddToWishlist');
+                gtag('event', '完成Twitter分享');
+                window.open(encodeURI('https://twitter.com/intent/tweet?url=' + WEBSITE_URL + '&text=' + SHARE_CONTEXT));
+                break;
+        }
     }
 
 }
