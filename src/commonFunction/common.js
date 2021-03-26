@@ -21,7 +21,8 @@ export default {
     gtag() {
         dataLayer.push(arguments);
     },
-
+    
+    
     // 分享
     doShare(code) {
         switch (code) {
@@ -40,4 +41,5 @@ export default {
         }
     }
 
+    
 }

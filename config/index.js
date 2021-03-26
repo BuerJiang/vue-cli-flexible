@@ -11,7 +11,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'https://api-cepheusm.ujoygames.co.kr/counterarms',//设置你调用的接口域名和端口号 别忘了加http
+        target: "https://api-register.ujoygames.com",//设置你调用的接口域名和端口号 别忘了加http
         changeOrigin: true,//如果需要跨域
         pathRewrite: {
           '^/api': '/',//调用接口直接写‘/api/user/add’即可
