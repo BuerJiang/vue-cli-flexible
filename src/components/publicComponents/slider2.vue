@@ -1,5 +1,5 @@
 <template>
-  <div class="slider slider2">
+  <div class="slider slider2 ani">
     <div
       class="slider position-absolute bg-block d-flex align-items-center justify-content-center"
     >
@@ -30,7 +30,7 @@
             ></span>
           </div>
           <div class="agree">
-            <div class="inline-block mr-2 mt-2">
+            <div class="inline-block mr-1 mt-2">
               <div
                 v-for="(item, index) in list"
                 :key="index"
@@ -233,7 +233,7 @@ export default {
     .box-middle {
       z-index: 2;
       width: 50%;
-      height: 920px;
+      height: 946px;
       background: url("../../assets/img/m2/xf.png") no-repeat center top;
       background-size: 100% 100%;
       transform: translate(-50%, 0);
@@ -285,7 +285,7 @@ export default {
           font-size: 11px;
           .agree-btn {
             font-family: NotoSerifCJKsc-Regular;
-            font-size: 18px;
+            font-size: 16px;
             font-weight: normal;
             font-stretch: normal;
             letter-spacing: 0px;

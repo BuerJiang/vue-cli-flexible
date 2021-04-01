@@ -7,7 +7,7 @@
       <img src="../assets/img/m1/bg.png" alt="" srcset="" width="1920px" />
     </div> -->
     <swiper :options="swiperOption" ref="goodSwiper">
-      <swiper-slide>
+      <swiper-slide class="ani">
         <slider1 />
       </swiper-slide>
       <swiper-slide class="stop-swiping">
@@ -34,7 +34,6 @@ import slider1 from "./publicComponents/slider1";
 import slider2 from "./publicComponents/slider2";
 import slider3 from "./publicComponents/slider3";
 import slider4 from "./publicComponents/slider4";
-
 export default {
   name: "Home",
   components: {
@@ -46,7 +45,6 @@ export default {
   data() {
     return {
       nextShow: true,
-
       swiperOption: {
         direction: "vertical",
         height: window.innerHeight, // 高度设置，占满设备高度
@@ -119,7 +117,12 @@ export default {
     };
   },
   created() {},
-  mounted() {},
+  mounted() {
+ 
+  },
+  watch: {
+   
+  },
   computed: {},
   methods: {
     // 用来控制注册页，在注册的时候，禁止拖动等

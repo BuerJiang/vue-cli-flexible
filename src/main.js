@@ -9,9 +9,11 @@ import axios from 'axios'
 import common from '@/commonFunction/common.js' 
 // mds加密文件
 import md5 from '@/commonFunction/jquery.md5.min.js' 
+
+
 // 引入全局样式
-import './assets/common.css'
-import './assets/core.css'
+import './assets/style/common.css'
+import './assets/style/core.css'
 
 // 引入swiper轮播图插件
 import VueAwesomeSwiper from 'vue-awesome-swiper'
@@ -26,6 +28,7 @@ Vue.prototype.$axios = axios
 Vue.config.productionTip = false
 Vue.prototype.common = common
 Vue.prototype.md5 = md5
+
 Vue.use(VueAwesomeSwiper)
 // Vue.prototype.HOST = '/api'
 axios.defaults.baseURL = 'https://api-register.ujoygames.com'
